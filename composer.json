@@ -1,7 +1,7 @@
 {
-    "name": "deesoft/hris-application",
-    "description": "HRIS Application",
-    "keywords": ["yii2", "hris"],
+    "name": "deesoft/hris-dev",
+    "description": "HRIS development project",
+    "keywords": ["yii2", "hris", "main"],
     "type": "project",
     "license": "BSD-3-Clause",
     "authors": [
@@ -20,9 +20,7 @@
         "php": ">=5.4.0",
         "yiisoft/yii2": "~2.0",
         "mdmsoft/yii2-admin": "~1.0",
-        "mdmsoft/yii2-widgets": "~1.0",
-        "yiisoft/yii2-bootstrap": "~2.0",
-        "deesoft/hris-overtime": "~1.0"
+        "yiisoft/yii2-bootstrap": "~2.0"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0",
@@ -37,6 +35,11 @@
     },
     "config": {
         "process-timeout": 1800
+    },
+    "autoload": {
+        "psr-4": {
+            "hris\\overtime\\": "modules/overtime"
+        }
     },
     "extra": {
         "asset-installer-paths": {
