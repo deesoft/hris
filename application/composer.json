@@ -12,8 +12,8 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/sangkil/application/issues",
-        "source": "https://github.com/sangkil/application"
+        "issues": "https://github.com/deesoft/hris/issues",
+        "source": "https://github.com/deesoft/hris"
     },
     "minimum-stability": "dev",
     "require": {
@@ -43,7 +43,7 @@
             "bower-asset-library": "vendor/bower"
         },
         "branch-alias": {
-            "dev-master": "3.0.x-dev"
+            "dev-master": "1.0.x-dev"
         }
     }
 }
