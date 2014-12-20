@@ -19,7 +19,6 @@
     "require": {
         "php": ">=5.4.0",
         "yiisoft/yii2": "~2.0",
-        "mdmsoft/yii2-admin": "~1.0",
         "yiisoft/yii2-bootstrap": "~2.0"
     },
     "require-dev": {
@@ -36,7 +35,14 @@
     "config": {
         "process-timeout": 1800
     },
+    "scripts": {
+        "post-install-cmd": "project\\Installer::apply",
+        "post-update-cmd": "project\\Installer::apply"
+    },
     "autoload": {
+        "psr-0": {
+            "project\\Installer": ""
+        },
         "psr-4": {
             "hris\\overtime\\": "modules/overtime"
         }
